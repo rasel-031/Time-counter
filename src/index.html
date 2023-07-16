@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script src="/Js/index.js"></script>
+  </head>
+  <body class="font-serif w-auto flex justify-center mt-10">
+    <div class="flex flex-col justify-center">
+      <div
+        class="w-fit flex flex-col items-center rounded-xl bg-pink-300 pr-10 pl-10 pb-5 pt-5"
+      >
+        <div class="mb-3">
+          <h1 class="text-3xl font-bold">Stop Watch</h1>
+          <hr />
+        </div>
+        <form action="#" class="flex flex-col space-y-2">
+          <div class="flex flex-col">
+            <label for="">Your Name</label>
+            <input
+              type="text"
+              id="userName"
+              class="border rounded-lg focus:outline-0 px-3 py-1"
+              required
+            />
+          </div>
+          <div class="flex flex-col">
+            <label for="">Your Time (Minutes)</label>
+            <input
+              type="number"
+              id="userTime"
+              class="border rounded-lg focus:outline-0 px-3 py-1"
+              required
+            />
+          </div>
+          <div class="pt-5 flex justify-center">
+            <button
+              onClick="createUser()"
+              class="bg-white px-8 py-1 rounded-lg hover:bg-gray-400 hover:text-white"
+            >
+              START
+            </button>
+          </div>
+        </form>
+      </div>
+      <br />
+      <div id="newContainer" class="w-auto flex flex-col"></div>
+    </div>
+  </body>
+</html>
